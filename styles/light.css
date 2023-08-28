@@ -9,4 +9,15 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  background-image: url(/images/cover-image-light.png);
+  --color-focus-title: #ffc2e6;
+  --main-color-decor: #ff8dcb;
+  --main-text-color: #353430;
+  --main-color-decor-title: #353430;
+  --main-color-decor-nav: #353430;
+  --main-color-decor-border: #353430;
+  --rec-vision: hidden;
+}
+.rec::before {
+  visibility: visible;
 }
