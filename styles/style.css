@@ -54,6 +54,9 @@
   border: none;
   text-transform: lowercase;
 }
+.header__theme-menu-button_active {
+  pointer-events: none;
+}
 .header__theme-menu-item:has(.header__theme-menu-button_active) {
   border: 1px solid var(--main-color-decor-border);
 }
