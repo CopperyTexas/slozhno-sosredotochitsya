@@ -47,12 +47,22 @@
   gap: 10px;
 }
 .header__theme-menu-button {
+  cursor: pointer;
   padding: 0 13px;
   color: var(--main-color-decor-nav);
   line-height: 18px;
   background-color: transparent;
   border: none;
   text-transform: lowercase;
+}
+.header__theme-menu-item:hover {
+  border: 1px solid var(--main-color-decor-nav-hover);
+}
+.header__theme-menu-button:focus {
+  outline: none;
+}
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--main-color-decor-nav);
 }
 .header__theme-menu-button_active {
   pointer-events: none;
@@ -100,6 +110,15 @@
 .highlighting {
   text-decoration: none;
   text-shadow: 2px 2px var(--main-color-decor);
+}
+.highlighting:hover {
+  border-bottom: 1px solid var(--main-text-color);
+}
+.highlighting:focus {
+  outline: none;
+}
+.highlighting:focus-visible {
+  border: 1px solid var(--main-text-color);
 }
 .section_why {
   padding: 60px 20px 80px;

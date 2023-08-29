@@ -5,6 +5,7 @@
   --main-color-decor-title: #ff0070;
   --main-color-decor-nav: #ff0070;
   --main-color-decor-border: #ff0070;
+  --main-color-decor-nav-hover: rgba(255, 0, 112, 0.4);
   --title-text: #000028;
   --rec-vision: visible;
   background-image: url(/images/cover-image-dark.png);
