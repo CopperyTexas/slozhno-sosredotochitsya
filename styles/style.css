@@ -74,7 +74,7 @@
   margin-block-start: 25px;
   align-self: center;
   color: var(--color-focus-title);
-  text-shadow: 4px 4px 0px var(--main-color-decor);
+  text-shadow: 4px 4px 0px var(--main-color-decor-main);
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-weight: 700;
   line-height: 82.5%;
@@ -92,9 +92,8 @@
 }
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  background-image: url(../images/cover-image.png);
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   max-width: 1024px;
@@ -236,7 +235,7 @@
   justify-self: center;
   align-self: center;
   color: var(--color-focus-title);
-  text-shadow: 2px 2px 0px var(--main-color-decor);
+  text-shadow: 2px 2px 0px var(--main-color-decor-main);
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-weight: 700;
   line-height: 82.5%;
@@ -292,6 +291,12 @@
   }
   .section_how {
     grid-template-columns: fit-content(32.5%) minmax(min-content, max-content);
+  }
+  .header-title{
+    text-shadow: 4px 4px 0px var(--main-color-decor);
+  }
+  .footer-title{
+    text-shadow: 2px 2px 0px var(--main-color-decor);
   }
 }
 @media screen and (max-width: 375px) {
