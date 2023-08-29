@@ -167,7 +167,7 @@
 }
 .images-box {
   display: grid;
-  grid-template-columns: repeat(3, calc((100%-40px) / 3));
+  grid-template-columns: repeat(3, calc((100%-80px) / 3));
   grid-template-rows: 25% 30% 41%;
   gap: 20px;
 }
