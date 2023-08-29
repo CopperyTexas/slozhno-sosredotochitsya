@@ -4,11 +4,11 @@
   переключая тему
 */
 
-.page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
+/* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+.page.theme_light {
   background-image: url(/images/cover-image-light.png);
   --color-focus-title: #ffc2e6;
   --main-color-decor: #ff8dcb;
@@ -20,4 +20,31 @@
 }
 .rec::before {
   visibility: visible;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-focus-title: #ffc2e6;
+    --main-color-decor: #ff8dcb;
+    --main-text-color: #353430;
+    --main-color-decor-title: #353430;
+    --main-color-decor-nav: #353430;
+    --main-color-decor-border: #353430;
+    --rec-vision: hidden;
+  }
+  .rec::before {
+    visibility: visible;
+  }
+  .page.theme_light {
+    background-image: url(/images/cover-image-light.png);
+    --color-focus-title: #ffc2e6;
+    --main-color-decor: #ff8dcb;
+    --main-text-color: #353430;
+    --main-color-decor-title: #353430;
+    --main-color-decor-nav: #353430;
+    --main-color-decor-border: #353430;
+    --rec-vision: hidden;
+  }
+  .page {
+    background-image: url(/images/cover-image-light.png);
+  }
 }
