@@ -9,7 +9,7 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
 }
-.decorated-zone::after {
+.header::after {
   content: "";
   width: 25px;
   height: 25px;
@@ -300,11 +300,20 @@
     max-width: 100%;
   }
   .header {
+    padding: 10px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
   }
   .header__theme-menu {
     align-self: flex-end;
+  }
+  .rec {
+    position: absolute;
+    bottom: calc(100% - 35px);
+    left: calc(100% - 70px);
+    color: var(--main-color-decor);
+    visibility: var(--rec-vision);
   }
   .rec::before {
     display: none;
@@ -317,4 +326,69 @@
     border-top: 1px solid var(--main-color-decor-border);
     border-right: 1px solid var(--main-color-decor-border);
   }
+  .header__theme-menu{
+    margin-block-start: 8px;
+    margin-inline-end: 0px;
+  }
+  .header-title{
+    margin-block-start: 40px;
+    font-size: 116px;
+  }
+  .header::after{
+    margin-inline-start: 0px;
+  }
+  .section_why{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 10px 0px;
+  }
+  .section_what{
+    padding: 0 10px;
+  }
+  .what-title {
+    max-width: 100%;
+    margin-block-start: 50px;
+  }
+  .section_how {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    margin-block-start: 50px;
+    margin-block-end: 48px;
+  }
+  .images-box {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .section_answer-title-images {
+    margin: 0 10px;
+  }
+  .footer{
+    padding: 0 10px 20px 10px;
+    display: flex;
+    flex-direction: column;
+    max-height: 668px;
+  }
+  .footer-title{
+    justify-self: center;
+    font-size: 116px;
+  }
+  .footer::before {
+    content: "";
+    align-self: flex-end;
+    width: 25px;
+    height: 25px;
+    border-top: 1px solid var(--main-color-decor-border);
+    border-right: 1px solid var(--main-color-decor-border);
+  }
+  .footer::after {
+    align-self: start;
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-bottom: 1px solid var(--main-color-decor-border);
+    border-left: 1px solid var(--main-color-decor-border);
+}
 }
