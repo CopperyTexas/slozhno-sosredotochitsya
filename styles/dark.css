@@ -8,7 +8,7 @@
   --main-color-decor-nav-hover: rgba(255, 0, 112, 0.4);
   --title-text: #000028;
   --rec-vision: visible;
-  background-image: url(/images/cover-image-dark.png);
+  background-image: url(../images/cover-image-dark.png);
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -22,7 +22,7 @@
     --rec-vision: visible;
   }
   .page {
-    background-image: url(/images/cover-image-dark.png);
+    background-image: url(../images/cover-image-dark.png);
   }
   .rec::before {
     visibility: visible;

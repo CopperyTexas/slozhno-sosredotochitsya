@@ -8,7 +8,7 @@
   --main-color-decor-nav-hover: rgba(53, 52, 48, 0.4);
   --title-text: #353430;
   --rec-vision: hidden;
-  background-image: url(/images/cover-image-light.png);
+  background-image: url(../images/cover-image-light.png);
 }
 .rec::before {
   visibility: visible;
@@ -25,7 +25,7 @@
     --rec-vision: hidden;
   }
   .page {
-    background-image: url(/images/cover-image-light.png);
+    background-image: url(../images/cover-image-light.png);
   }
   .rec::before {
     visibility: visible;
