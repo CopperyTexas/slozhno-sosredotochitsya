@@ -137,6 +137,7 @@
   margin-block-start: 80px;
   grid-template-columns: fit-content(32%) minmax(min-content, max-content);
   gap: 20px;
+  margin-block-end: 60px;
 }
 .advice-title {
   margin-block-end: 0px;
