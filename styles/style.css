@@ -94,7 +94,7 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-image: url(../images/cover-image.png);
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-size: cover;
   background-position: center;
   max-width: 1024px;
@@ -324,28 +324,28 @@
     border-right: 1px solid var(--main-color-decor-border);
   }
 
-  .header__theme-menu{
+  .header__theme-menu {
     align-self: flex-end;
     margin-block-start: 8px;
     margin-inline-end: 0px;
   }
 
-  .header-title{
+  .header-title {
     margin-block-start: 40px;
     font-size: 116px;
   }
 
-  .header::after{
+  .header::after {
     margin-inline-start: 0px;
   }
 
-  .section_why{
+  .section_why {
     display: flex;
     flex-direction: column;
     padding: 40px 10px 0px;
   }
 
-  .section_what{
+  .section_what {
     padding: 0 10px;
   }
 
@@ -373,14 +373,14 @@
     margin: 0 10px;
   }
 
-  .footer{
+  .footer {
     padding: 0 10px 20px 10px;
     display: flex;
     flex-direction: column;
     max-height: 668px;
   }
 
-  .footer-title{
+  .footer-title {
     justify-self: center;
     font-size: 116px;
   }
