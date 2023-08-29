@@ -3,7 +3,7 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     --color-focus-title: #ffc2e6;
     --main-color-decor: #ff8dcb;
@@ -19,7 +19,7 @@
   .page {
     background-image: url(/images/cover-image-light.png);
   }
-}
+} */
 
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
