@@ -4,6 +4,21 @@
   переключая тему
 */
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-color-decor: #ff0070;
+    --color-focus-title: #db00ff;
+    --color-text: 0000;
+    --main-text-color: #f1b2ce;
+    --main-color-decor-title: #ff0070;
+    --main-color-decor-nav: #ff0070;
+    --main-color-decor-border: #ff0070;
+    --rec-vision: visible;
+  }
+  .page {
+    background-image: url(/images/cover-image-dark.png);
+  }
+}
 .page.theme_dark {
   --main-color-decor: #ff0070;
   --color-focus-title: #db00ff;
