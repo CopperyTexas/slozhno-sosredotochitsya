@@ -3,7 +3,23 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-focus-title: #ffc2e6;
+    --main-color-decor: #ff8dcb;
+    --main-text-color: #353430;
+    --main-color-decor-title: #353430;
+    --main-color-decor-nav: #353430;
+    --main-color-decor-border: #353430;
+    --rec-vision: hidden;
+  }
+  .rec::before {
+    visibility: visible;
+  }
+  .page {
+    background-image: url(/images/cover-image-light.png);
+  }
+}
 .page.theme_dark {
   --main-color-decor: #ff0070;
   --color-focus-title: #db00ff;
