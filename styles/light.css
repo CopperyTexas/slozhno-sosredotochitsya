@@ -1,7 +1,7 @@
 .page.theme_light {
   --color-focus-title: #ffc2e6;
   --main-color-decor: #ff8dcb;
-  --main-color-decor-main:#ff0070;
+  --main-color-decor-main: #ff0070;
   --main-text-color: #353430;
   --main-color-decor-title: #353430;
   --main-color-decor-nav: #353430;
@@ -10,6 +10,7 @@
   --title-text: #353430;
   --rec-vision: hidden;
   --bg-light: url(../images/cover-image-light.png);
+  --bg-color: #ffc2e6;
   background-image: var(--bg-light);
 }
 .rec::before {
@@ -18,13 +19,14 @@
 @media (prefers-color-scheme: light) {
   :root {
     --color-focus-title: #ffc2e6;
-    --main-color-decor-main:#ff0070;
+    --main-color-decor-main: #ff0070;
     --main-color-decor: #ff8dcb;
     --main-text-color: #353430;
     --main-color-decor-title: #353430;
     --main-color-decor-nav: #353430;
     --main-color-decor-border: #353430;
     --title-text: #353430;
+    --bg-color: #ffc2e6;
     --rec-vision: hidden;
     --bg-light: url(../images/cover-image-light.png);
   }

@@ -93,7 +93,7 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-size: cover;
   background-position: center;
   max-width: 1024px;
@@ -103,7 +103,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 23.4px; /* 130% */
-  background-color: #000028;
+  background-color: var(--bg-color);
 }
 /* main style start */
 .highlighting {
@@ -292,10 +292,10 @@
   .section_how {
     grid-template-columns: fit-content(32.5%) minmax(min-content, max-content);
   }
-  .header-title{
+  .header-title {
     text-shadow: 4px 4px 0px var(--main-color-decor);
   }
-  .footer-title{
+  .footer-title {
     text-shadow: 2px 2px 0px var(--main-color-decor);
   }
 }
@@ -406,5 +406,5 @@
     height: 25px;
     border-bottom: 1px solid var(--main-color-decor-border);
     border-left: 1px solid var(--main-color-decor-border);
-}
+  }
 }

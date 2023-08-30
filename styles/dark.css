@@ -8,6 +8,7 @@
   --main-color-decor-border: #ff0070;
   --main-color-decor-nav-hover: rgba(255, 0, 112, 0.4);
   --title-text: #000028;
+  --bg-color: #000028;
   --rec-vision: visible;
   --bg-dark: url(../images/cover-image-dark.png);
   background-image: var(--bg-dark);
@@ -22,6 +23,7 @@
     --main-color-decor-nav: #ff0070;
     --main-color-decor-border: #ff0070;
     --title-text: #000028;
+    --bg-color: #000028;
     --rec-vision: visible;
     --bg-dark: url(../images/cover-image-dark.png);
   }
