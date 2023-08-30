@@ -13,7 +13,7 @@
   --bg-dark: url(../images/cover-image-dark.png);
   background-image: var(--bg-dark);
 }
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --main-color-decor: #ff0070;
     --main-color-decor-main: #ff0070;
@@ -33,4 +33,4 @@
   .rec::before {
     visibility: visible;
   }
-}
+} */

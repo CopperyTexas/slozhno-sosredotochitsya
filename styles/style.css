@@ -1,5 +1,4 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-/*header style */
+/*-----------------------------------header style start---------------------------*/
 .header {
   width: 100%;
   height: 100vh;
@@ -9,6 +8,44 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
 }
+.header__theme-menu {
+  justify-self: center;
+}
+.header__theme-menu-list {
+  display: flex;
+  gap: 10px;
+}
+.header__theme-menu-button {
+  cursor: pointer;
+  padding: 0 13px;
+  color: var(--main-color-decor-nav);
+  line-height: 18px;
+  background-color: transparent;
+  border: none;
+  text-transform: lowercase;
+}
+.header-title {
+  margin-block-start: 25px;
+  align-self: center;
+  color: var(--color-focus-title);
+  text-shadow: 4px 4px 0px var(--main-color-decor-main);
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  font-weight: 700;
+  line-height: 82.5%;
+}
+.header-text {
+  margin-block-start: 25px;
+  margin-inline-end: 20px;
+  align-self: center;
+  justify-self: flex-end;
+  height: min-content;
+  max-width: 48%;
+  background-color: var(--main-color-decor);
+  color: var(--title-text);
+  font-weight: 700;
+}
+/*-----------------------------------header style end----------------------------*/
+/* -------------------------------Декоративная часть start---------------------- */
 .header::after {
   content: "";
   width: 25px;
@@ -39,22 +76,32 @@
   border-top: 1px solid var(--main-color-decor-border);
   border-right: 1px solid var(--main-color-decor-border);
 }
-.header__theme-menu {
-  justify-self: center;
+.footer::before {
+  display: block;
+  position: relative;
+  content: "";
+  justify-self: end;
+  top: 0px;
+  left: 0px;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--main-color-decor-border);
+  border-right: 1px solid var(--main-color-decor-border);
 }
-.header__theme-menu-list {
-  display: flex;
-  gap: 10px;
+.footer::after {
+  display: block;
+  position: relative;
+  content: "";
+  align-self: flex-end;
+  top: 0px;
+  left: 0px;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--main-color-decor-border);
+  border-left: 1px solid var(--main-color-decor-border);
 }
-.header__theme-menu-button {
-  cursor: pointer;
-  padding: 0 13px;
-  color: var(--main-color-decor-nav);
-  line-height: 18px;
-  background-color: transparent;
-  border: none;
-  text-transform: lowercase;
-}
+/* -------------------------------Декоративная часть end----------------------- */
+/* -------------------------------Состояния кнопок start----------------------- */
 .header__theme-menu-item:hover {
   border: 1px solid var(--main-color-decor-nav-hover);
 }
@@ -70,30 +117,12 @@
 .header__theme-menu-item:has(.header__theme-menu-button_active) {
   border: 1px solid var(--main-color-decor-border);
 }
-.header-title {
-  margin-block-start: 25px;
-  align-self: center;
-  color: var(--color-focus-title);
-  text-shadow: 4px 4px 0px var(--main-color-decor-main);
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  font-weight: 700;
-  line-height: 82.5%;
-}
-.header-text {
-  margin-block-start: 25px;
-  margin-inline-end: 20px;
-  align-self: center;
-  justify-self: flex-end;
-  height: min-content;
-  max-width: 48%;
-  background-color: var(--main-color-decor);
-  color: var(--title-text);
-  font-weight: 700;
-}
+/* -------------------------------Состояния кнопок end------------------------- */
+/* -------------------------------Main style start----------------------------- */
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-image: url(/images/cover-image-dark.png);
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   max-width: 1024px;
@@ -104,20 +133,6 @@
   font-weight: 400;
   line-height: 23.4px; /* 130% */
   background-color: var(--bg-color);
-}
-/* main style start */
-.highlighting {
-  text-decoration: none;
-  text-shadow: 2px 2px var(--main-color-decor);
-}
-.highlighting:hover {
-  border-bottom: 1px solid var(--main-text-color);
-}
-.highlighting:focus {
-  outline: none;
-}
-.highlighting:focus-visible {
-  border: 1px solid var(--main-text-color);
 }
 .section_why {
   padding: 60px 20px 80px;
@@ -175,6 +190,23 @@
   background-color: var(--main-color-decor);
   margin-block-end: 10px;
 }
+/* -------------------------------Main style end----------------------------- */
+/* -------------------------------Оформление ссылки start-------------------- */
+.highlighting {
+  text-decoration: none;
+  text-shadow: 2px 2px var(--main-color-decor);
+}
+.highlighting:hover {
+  border-bottom: 1px solid var(--main-text-color);
+}
+.highlighting:focus {
+  outline: none;
+}
+.highlighting:focus-visible {
+  border: 1px solid var(--main-text-color);
+}
+/* -------------------------------Оформление ссылки end---------------------- */
+/* -------------------------------Секция с изображениями start--------------- */
 .images {
   margin-block-end: 40px;
 }
@@ -222,6 +254,8 @@
   grid-column: 2/4;
   grid-row: 3/4;
 }
+/* -------------------------------Секция с изображениями end--------------- */
+/* -------------------------------footer style start----------------------- */
 .footer {
   width: 100%;
   height: 100vh;
@@ -240,32 +274,8 @@
   font-weight: 700;
   line-height: 82.5%;
 }
-
-.footer::before {
-  display: block;
-  position: relative;
-  content: "";
-  justify-self: end;
-  top: 0px;
-  left: 0px;
-  width: 25px;
-  height: 25px;
-  border-top: 1px solid var(--main-color-decor-border);
-  border-right: 1px solid var(--main-color-decor-border);
-}
-.footer::after {
-  display: block;
-  position: relative;
-  content: "";
-  align-self: flex-end;
-  top: 0px;
-  left: 0px;
-  width: 25px;
-  height: 25px;
-  border-bottom: 1px solid var(--main-color-decor-border);
-  border-left: 1px solid var(--main-color-decor-border);
-}
-
+/* -------------------------------footer style end------------------------ */
+/* -------------------------------Медиа запрос 768px * 1024px start---------------- */
 @media screen and (max-width: 768px) {
   .section_what-box {
     grid-template-columns: repeat(auto-fit, minmax(355px, max-content));
@@ -299,6 +309,8 @@
     text-shadow: 2px 2px 0px var(--main-color-decor);
   }
 }
+/* -------------------------------Медиа запрос 768px * 1024px end---------------- */
+/* -------------------------------Медиа запрос 375px * 668px start------------------- */
 @media screen and (max-width: 375px) {
   .header-text {
     margin-inline-end: 0px;
@@ -408,3 +420,4 @@
     border-left: 1px solid var(--main-color-decor-border);
   }
 }
+/* -------------------------------Медиа запрос 375px * 668px end------------------- */
