@@ -6,17 +6,20 @@
   --main-color-decor-title: #353430;
   --main-color-decor-nav: #353430;
   --main-color-decor-border: #353430;
-  --main-color-decor-nav-hover: rgba(53, 52, 48, 0.4);
+  --main-color-decor-nav-hover: rgb(53 52 48 / 0.4);
   --title-text: #353430;
   --rec-vision: hidden;
   --bg-light: url(../images/cover-image-light.png);
   --bg-color: #ffc2e6;
   background-image: var(--bg-light);
 }
+
 .rec::before {
   visibility: visible;
 }
+
 @media (prefers-color-scheme: light) {
+
   :root {
     --color-focus-title: #ffc2e6;
     --main-color-decor-main: #ff0070;
@@ -30,9 +33,11 @@
     --rec-vision: hidden;
     --bg-light: url(../images/cover-image-light.png);
   }
+
   .page {
     background-image: var(--bg-light);
   }
+
   .rec::before {
     visibility: visible;
   }
